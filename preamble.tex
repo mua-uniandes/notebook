@@ -90,6 +90,21 @@ morestring=[b]"
   belowskip=0pt
 }
 
+% Java
+\lstdefinestyle{java}
+ {language=Java,
+  frame=lines,
+  showstringspaces=false,
+  keywordstyle=\tt\bf,
+  tabsize=3,
+  style=floating,
+  morekeywords={}
+}
+
+%java environment    
+\lstnewenvironment{java}[1][]
+ {\lstset{style=java,#1}}{}  
+
 % context traits listings
 \lstdefinestyle{ctxtraits}
  {language=JavaScript,
